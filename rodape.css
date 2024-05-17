@@ -9,10 +9,10 @@ h1{
   font-size: 12px;
 }
 .footer-conteiner{
-  background-color: #ffffff;
+  background-color:#fffcfc;
   position: relative;
   margin-top: 50%;
-  height: 160px;
+  height: 270px;
 }
 hr{
   color: black;
@@ -33,6 +33,8 @@ hr{
   top: 50px;
   width: 80%;
   height: 2px;
+  left: 50%;
+  transform: translate(-50%);
 }
 .footer-socias{
   justify-content: center;
@@ -63,4 +65,21 @@ hr{
 }
 #whatsapp{
   background-color:#25d366 ;
+}
+
+
+.fim{
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.contato{
+  margin-right: 10%;
+}
+
+.informacoes{
+  margin-left: 10%;
 }
