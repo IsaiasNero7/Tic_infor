@@ -1,0 +1,76 @@
+.horario_valores img{
+  
+  width: 450px;
+  height:400px;
+  margin:20px 20px;
+  border-radius: 10px;
+}
+
+.horario_valores img:hover{
+
+  border: solid 3px #ffDE59;
+
+}
+.horario_valores{
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  left: 50%;
+  transform: translate(-50%);
+ 
+}
+
+.tabela2{
+margin: 20px;
+position: relative;
+left: -50%;
+transform: translate(50%,110%);
+
+
+}
+
+.imgs{
+  display: flex;
+  left: 25%;
+transform: translate(19%);
+ 
+}
+
+
+
+.img_tabela img{
+  
+  margin: 10px;
+  width: 350px;
+  height:300px;
+  border-radius: 10px;
+
+}
+
+.img_tabela img:hover{
+  border: solid 3px #ffDE59;
+}
+
+.txt{
+  display: flex;
+  position: relative;
+  left: 37%;
+  transform: translate(-37);
+  
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt h1{
+ margin: 10px 5px;
+}
+.experiencia{
+  color: white;
+}
+
+.forca{
+  color: #ffDE59;
+  position: relative;
+  
+}

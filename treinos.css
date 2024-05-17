@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.banner{
+    width: 100vw;
+}
+
+.tabelas_treino{
+    position:absolute ;
+    left: 50%;
+    transform: translate(-50%);
+}

@@ -1,0 +1,47 @@
+@media screen and (max-width: 700px){
+/*menu*/
+  #btn-menu{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffff;
+  margin:20px;
+  background-color: transparent;
+  transition: 0.5s;
+  position: absolute;
+  top:-1%;
+  }
+/*menu*/ 
+
+/*carrossel*/
+  img {
+    height: 200px;
+  }
+/*carrossel*/
+  
+/*mapa*/
+  iframe{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 320px;
+  height: 300px;
+  }
+/*mapa*/
+
+/*encontre a força natural*/
+.texto{
+ 
+}
+  .texto .f {
+    color: #ff3131;
+    margin: 10px 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .texto h1{
+    margin: 10px 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/*encontre a força natural*/
+}
