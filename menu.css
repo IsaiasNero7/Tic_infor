@@ -8,7 +8,19 @@ background-color: #000000;
 
 }
 
+.loginn{
+  background-color:transparent;
+  border: solid 1px #ffDE59;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  right: -150px;
+}
 
+.loginn a{ 
+  text-decoration: none;
+  color: #ffDE59;
+}
 .navbar{
 
   background-color: #000000;
@@ -23,7 +35,7 @@ background-color: #000000;
 .container-fluid .nav-link{
 font-size: 24px;
 color: #ffDE59;
-margin-left: 130px;
+margin-left: 100px;
 
 }
 

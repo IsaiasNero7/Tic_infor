@@ -10,10 +10,12 @@ body{
 
 .banner{
     width: 100vw;
+    position: relative;
+    top: 100px;
 }
 
 .tabelas_treino{
     position:absolute ;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%,20%);
 }

@@ -9,7 +9,7 @@ h1{
   font-size: 12px;
 }
 .footer-conteiner{
-  background-color:#fffcfc;
+  background-color:#ebebebf1;
   position: relative;
   margin-top: 50%;
   height: 270px;
@@ -20,7 +20,7 @@ hr{
 .linha{
   background-color: #000000;
   position: relative;
-  top: 70px;
+  top: 80px;
   width: 80%;
   height: 2px;
 
@@ -83,3 +83,4 @@ hr{
 .informacoes{
   margin-left: 10%;
 }
+
