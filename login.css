@@ -35,8 +35,8 @@ body img{
 }
 
 .formLogin {
-    width: 500px;
-    height: 610px;
+    width: 400px;
+    height: 510px;
     position: absolute;
     left: 50%;
     transform: translate(-50%,20%);
