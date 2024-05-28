@@ -23,6 +23,9 @@ hr{
   top: 80px;
   width: 80%;
   height: 2px;
+  left: 50%;
+  transform: translate(-50%);
+
 
 
 }
