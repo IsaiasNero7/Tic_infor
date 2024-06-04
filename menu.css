@@ -3,64 +3,103 @@
   box-sizing: border-box;
 }
 body{
-
-
-
+  background-color: gray;
 }
+
+
 
 .loginn{
   background-color:transparent;
   border: solid 1px #ffDE59;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   position: relative;
-  right: -150px;
+  margin-left: 5vw;
 }
 
 .loginn a{ 
   text-decoration: none;
   color: #ffDE59;
+  font-size: 25px;
 }
 .navbar{
- background-color: #000000;
+  background-color: black;
+
 }
-.container-fluid{
-  background: #000000;
+
+.navbar ul{
+  display: flex;
+  background: black;
+  padding: 10px;
+}
+
+.nav-itens{
+  list-style-type: none;
+  margin-left: 5vw;
+  position: relative;
+  align-items: center;
+}
+
+.nav-itens-home{
+  list-style-type: none;
+  align-items: center;
+  margin-right:8vw;
+}
+
+.nav-itens .nav-lin{
+  text-decoration: none;
   color: #ffDE59;
-  height: 70px;
-  margin: 0px;
-}
-
-.container-fluid .nav-link{
-font-size: 24px;
-color:#ffDE59;
-margin-left: 100px;
-
-}
-
-.container-fluid .nav-link:not(:hover){
-  font-size: 24px;
-  color:#ffDE59;
-  margin-left: 100px;  
-}
-
-
-
-.container-fluid .navbar-brand{
-  color: #ffDE59;
+  margin-left: 20px;
   font-size: 30px;
-  margin-left: 5px;
+  transition: width 0.5s;
 }
 
-.container-fluid .navbar-brand:hover{
+.navbar ul .nav-lin{
+  margin-left: 50px;
+}
+
+
+.nav-itens-home .forca{
+  font-size: 35px;
+  text-decoration: none;
+  position: relative;
   color: #ffDE59;
-}
-
-.container-fluid a:hover{
-  color: #ffDE59;
+  left: 1px;
 }
 
 
+.nav-itens button{
+  background: transparent;
+  border: none;
+  color: #ffDE59;;
+  font-size: 30px;
+  
+}
+
+.nav-itens .dropdawn{
+  
+  position: absolute;
+  display: block;
+  display: none;
+  border: solid 1px #ffDE59;;
+  list-style-type: none;
+  border-radius:10px ;
+  padding: 10px;
+  background: black;
+  
+}
+
+.nav-itens .dropdawn li a{
+  color:#ffDE59;;
+  font-size: 20px;
+  text-decoration: none;
+}
+.dropdawn.abrir{
+  display: block;
+
+  
+  
+}
 
 .borda{
   background-color: rgb(0, 0, 0);
@@ -80,5 +119,164 @@ margin-left: 100px;
  position: fixed;
 
 }
+
+
+
+
+
+
+
+
+
+#btn-menu{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffDE59;
+  background-color: transparent;
+  transition: 0.5s;
+  top: 0px;
+  right: 0;
+  transform: translate(-50%);
+  display: none;
+  
+  
+}
+
+
+.linha{
+  width: 30px;
+  height: 2px;
+  background-color: #ffDE59;
+  display: block;
+  margin: 7px auto;
+  position: relative;
+  transform-origin: content;
+  cursor: position;
+  transition: 0.2s;
+}
+
+#btn-menu.ativar .linha:nth-child(1){
+  transform: translateY(9px) rotate(-45deg);
+  background-color: red;
+}
+
+#btn-menu.ativar .linha:nth-child(2) {
+  background-color: transparent;
+  width: 0;
+  
+}
+
+#btn-menu.ativar .linha:nth-child(3) {
+  transform: translateY(-9px) rotate(45deg);
+  background-color: red;
+  
+}
+
+#btn-menu.ativar  {
+ border: 2px solid red;
+  
+}
+
+.texto{
+  background-color: black;
+  height: 50px;
+  display: none;
+}
+
+.texto h1{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #ffDE59 ;
+  display: none;
+  top: 0.5%;
+}
+
+.menu{
+  background-color: #1E1D1B;
+  position: fixed;
+  width: 100vw;
+  height: 0vh;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.9s;
+}
+
+.menu nav{
+  text-align: center;
+}
+
+.menu nav .nav-link-mobile{
+  color: #ffDE59;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 30px;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+ 
+}
+
+.btn-treino{
+  background-color: transparent;
+  color: #ffDE59;
+  position: relative;
+  padding: 20px;
+  top: 50px;
+  font-size: 23px;
+  border:none;
+  
+}
+
+.dropdawn-mobile a{
+  color: #ffDE59;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  top: 30px;
+  margin-top: 20px;
+  font-size: 16px;
+
+}
+
+
+
+
+
+
+.login_mobile{
+  background-color: transparent;
+  border: solid 1px #ffDE59;
+  padding: 15px 80px;
+  margin:60px 20px;
+  border-radius: 10px;
+}
+
+.login_mobile a{
+  color: #ffDE59;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.menu.abrir{
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+
+.dropdawn-mobile.abrir{
+  display:none;
+
+}
+
+
+
+
+
+
 
 
