@@ -1,14 +1,18 @@
-<?php 
-$host="localhost";
-$user="root";
-$sen="";
-$bd="academia";
+<?php
+// Dados de conexão
+$host = 'localhost'; // ou o endereço do seu servidor MySQL
+$db   = 'academia';
+$user = 'root';
+$pass = '';
 
-$conexao=mysqli_connect($host, $user, $sen, $bd);
-//if(!$conexao){
- //   echo"Email ou senha incorreto: ".mysqli_connect_error();
-//}
-//else{
- //   echo"deu certo";
-//}
+// Conexão com o banco de dados
+$conexao = new mysqli($host, $user, $pass, $db);
+
+// Verifica conexão
+if ($conexao->connect_error) {
+    die("Conexão falhou: " . $conexao->connect_error);
+}
 ?>
+
+
+
