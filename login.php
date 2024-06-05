@@ -13,7 +13,8 @@
         <input type="email" id="email" name="email"><br>
         <label for="senha">Senha:</label><br>
         <input type="password" id="senha" name="senha"><br><br>
-        <input type="submit" value="Login" name="login">
+        <a href="index.html">  <input type="submit" value="Login" name="login"></a>
+      
     </form>
 
     <?php
@@ -33,6 +34,7 @@
         // Verifica se a consulta retornou algum resultado
         if ($resultado->num_rows > 0) {
             echo "<p>Login bem-sucedido!</p>";
+            
         } else {
             echo "<p>Login falhou. Verifique suas credenciais.</p>";
         }

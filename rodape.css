@@ -19,7 +19,7 @@ hr{
 }
 .linha{
   background-color: #000000;
-  position: relative;
+  position: absolute;
   top: 80px;
   width: 80%;
   height: 2px;
