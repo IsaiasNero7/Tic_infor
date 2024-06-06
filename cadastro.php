@@ -19,20 +19,30 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Erro na conexão: " . $conn->connect_error);
 }
-
+<?php
 // Verificar se o formulário de cadastro foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_cadastro'])) {
+    // Dados predefinidos para teste
+    $usuarios = array(
+        array("nome" => "João", "email" => "joao@example.com", "senha" => "senha123"),
+        array("nome" => "Maria", "email" => "maria@example.com", "senha" => "senha456")
+    );
+
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Inserir dados na tabela Cadastro
-    $sql = "INSERT INTO Cadastro (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
-    if ($conn->query($sql) === TRUE) {
-        echo "Novo registro inserido com sucesso na tabela Cadastro.";
-    } else {
-        echo "Erro: " . $sql . "<br>" . $conn->error;
+    // Verificar se o email já está cadastrado
+    foreach ($usuarios as $usuario) {
+        if ($usuario['email'] == $email) {
+            echo "Erro: Email já cadastrado.";
+            exit();
+        }
     }
+
+    // Adicionar novo usuário aos dados predefinidos
+    $usuarios[] = array("nome" => $nome, "email" => $email, "senha" => $senha);
+    echo "Novo registro inserido com sucesso na tabela Cadastro.";
 }
 
 // Verificar se o formulário de login foi enviado
@@ -40,11 +50,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_login'])) {
     $email_login = $_POST['email_login'];
     $senha_login = $_POST['senha_login'];
 
-    // Verificar se o email e senha correspondem na tabela Login
-    $sql = "SELECT * FROM Login WHERE email='$email_login' AND senha='$senha_login'";
-    $result = $conn->query($sql);
+    // Verificar se o email e senha correspondem a algum usuário
+    $login_sucesso = false;
+    foreach ($usuarios as $usuario) {
+        if ($usuario['email'] == $email_login && $usuario['senha'] == $senha_login) {
+            $login_sucesso = true;
+            break;
+        }
+    }
 
-    if ($result->num_rows > 0) {
+    if ($login_sucesso) {
         echo "Login bem-sucedido!";
     } else {
         echo "Credenciais inválidas.";
@@ -67,10 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_login'])) {
     <input type="submit" name="submit_login" value="Login">
 </form>
 
-<?php
-// Fechar conexão
-$conn->close();
-?>
-
 </body>
 </html>
+
