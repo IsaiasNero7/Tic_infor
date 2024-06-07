@@ -24,6 +24,8 @@ unset($_SESSION['sucesso']);
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="login.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -32,46 +34,64 @@ unset($_SESSION['sucesso']);
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background-image:linear-gradient(45deg, #ffde59, black,#ffde59);
         }
 
         .card {
             width: 100%;
             max-width: 400px;
+            height: 510px;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            background-color: #fff;
+            background-color: black;
         }
 
         .card-title {
             font-size: 24px;
             font-weight: 500;
             margin-bottom: 20px;
-            color: #333;
+            color: #ffde59;
         }
 
         .input-field label {
-            color: #666;
+            color:#ffde59;
+            
         }
-
+        .input-field input{
+            color: #fff;
+            border: solid 1px white;
+        }
         .input-field input[type=email]:focus + label,
         .input-field input[type=password]:focus + label {
-            color: #1976d2 !important;
+            color: #ffde59!important;
         }
 
         .input-field input[type=email]:focus,
         .input-field input[type=password]:focus {
-            border-bottom: 1px solid #1976d2 !important;
+            border-bottom: 1px solid #ffde59 !important;
             box-shadow: 0 1px 0 0 #1976d2 !important;
-        }
 
+        }
+        .admin{
+            color: #DC143C;
+            margin: 50px 50px;
+
+
+        }
+        .aluno{
+         color: #ffde59;  
+         margin: 50px 50px;
+        }
+        
         .btn {
             background-color: #fff; /* Cor inicial */
-            color: #1976d2; /* Cor do texto */
+            color: black; /* Cor do texto */
             border: 1px solid #1976d2; /* Borda */
             border-radius: 4px;
+            position: relative;
+            top: 150px;
             padding: 0 16px;
             height: 36px;
             line-height: 36px;
@@ -84,21 +104,29 @@ unset($_SESSION['sucesso']);
         }
 
         .btn:hover {
-            background-color: #1976d2; /* Cor ao passar o mouse */
-            color: #fff; /* Cor do texto ao passar o mouse */
+            background-color: white; /* Cor ao passar o mouse */
+            color: black; /* Cor do texto ao passar o mouse */
         }
 
         .btn-back {
             display: block;
-            margin-top: 20px;
-            color: #1976d2;
+            position: absolute;
+            bottom: 20px;
+            color: #ffde59;
             font-weight: 500;
             text-decoration: none;
             transition: color 0.2s ease;
         }
 
         .btn-back:hover {
-            color: #1565c0;
+            color:#fff ;
+        }
+
+        .a{
+            display: flex;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
         }
     </style>
 </head>
@@ -108,30 +136,32 @@ unset($_SESSION['sucesso']);
         <span class="card-title">Login</span>
         <form action="processr login.php" method="POST">
             <div class="input-field">
-                <input type="email" id="email" name="email" class="validate" required>
+                <input type="email" id="email" name="email"  class="validate" required>
                 <label for="email">Email</label>
             </div>
             <div class="input-field">
                 <input type="password" id="senha" name="senha" class="validate" required>
                 <label for="senha">Senha</label>
             </div>
-            <div>
+
+            <div class="a">
                 <p>
                     <label>
                         <input name="tipo_usuario" type="radio" value="admin" required />
-                        <span class="blue-text text-darken-1">Administrador</span>
+                        <span class="admin">Administrador</span>
                     </label>
                 </p>
                 <p>
                     <label>
                         <input name="tipo_usuario" type="radio" value="aluno" required />
-                        <span class="purple-text text-darken-1">aluno</span>
+                        <span class="aluno">aluno</span>
                     </label>
                 </p>
             </div>
+
             <button type="submit" id="btn-entrar" class="btn">Entrar</button>
         </form>
-        <a href="cad.php" class="btn-back">Não é cadastrado? Cadastre-se aqui</a>
+        <a href="cad.php" class="btn-back">Não é cadastrado? Vá até a FN e faça sua matrícula</a>
     </div>
 
     <!-- Materialize JS -->
@@ -149,16 +179,16 @@ unset($_SESSION['sucesso']);
                 radio.addEventListener('change', function () {
                     var btnEntrar = document.getElementById('btn-entrar');
                     if (this.value === 'admin') {
-                        btnEntrar.style.backgroundColor = '#2196F3'; // Azul para admin
-                        btnEntrar.style.borderColor = '#2196F3';
-                        btnEntrar.style.color = '#fff'; // Texto branco
-                    } else if (this.value === 'paciente') {
-                        btnEntrar.style.backgroundColor = '#9c27b0'; // Roxo para paciente
-                        btnEntrar.style.borderColor = '#9c27b0';
-                        btnEntrar.style.color = '#fff'; // Texto branco
+                        btnEntrar.style.backgroundColor = '#DC143C'; // Vermelho para admin
+                        btnEntrar.style.borderColor = 'white';
+                        btnEntrar.style.color = 'white'; // Texto branco
+                    } else if (this.value === 'aluno') {
+                        btnEntrar.style.backgroundColor = '#ffde59'; // Amarelo para paciente
+                        btnEntrar.style.borderColor = 'white';
+                        btnEntrar.style.color = 'black'; // Texto branco
                     } else {
                         btnEntrar.style.backgroundColor = '#fff'; // Cor inicial
-                        btnEntrar.style.borderColor = '#1976d2';
+                        btnEntrar.style.borderColor = 'black';
                         btnEntrar.style.color = '#1976d2'; // Cor do texto
                     }
                 });

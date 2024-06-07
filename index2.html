@@ -1,49 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-   
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <link rel="stylesheet" href="tabela.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="rodape.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-   
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-       
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Forca natural</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+    <link rel="stylesheet" href="index.css">
+</head>
 
-              <li class="nav-item">
-
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Treinos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="teino_semanal.html">Semanal</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+<body>
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+  
+
+  <!--CARROSSEL-->
+    <section class="slider">
+  
+      <div class="slider-conteiner">
+  
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+  
+  
+  
+        <div class="slide-box primeiro">
+          <img class="img-desktop" src="carrossel/img.jpg">
+        </div>
+  
+        <div class="slide-box">
+          <img class="img-desktop" src="carrossel/img2.jpg">
+        </div>
+  
+        <div class="slide-box">
+          <img class="img-desktop" src="carrossel/img3.jpg">
+        </div>
+  
+        <div class="nav-auto">
+  
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+  
+        </div>
+  
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+  
+  
+      </div>
+    </section>
+<!--CARROSSEL--> 
+    
+  
+<!--HORARIO E VALORES-->
+<div class="horario_valores">
+  
+  <div class="tabela">
+    <img src="tabela/img.jpg">
+  </div>
+  
+  <div class="tabela">
+    <img src="tabela/img2.jpg">
+  </div>
+  </div>
+</div> 
+<!--HORARIO E VALORES-->  
+<div class="txt">
+  <h1 class="experiencia">Experiência <h1 class="forca">Força Natural</h1> 
+</h1>
+</div>
+<!--IMAGENS DA ACADEMIA-->
+<div class="tabela2">
+
+ 
+
+  <div class="imgs">
+  
+  <div class="img_tabela">
+    <img src="academia/img1.jpg">
+  </div>
+  
+  <div class="img_tabela">
+    <img src="academia/img2.jpg">
+  </div>
+
+  <div class="img_tabela">
+    <img src="academia/img3.jpg">
+  </div>
+
+</div> 
+</div>
+<!--IMAGENS DA ACADEMIA-->
+
+<div class="footer-conteiner">
+  
+  <div class="linha"></div>
+  <h1>Siga a Força Natural</h1>
+  <div class="footer-socias">
+    <br>
+    <a class="social" id="instagram" href="#"> 
+    <i class="bi bi-instagram"></i>
+    </a>
+   
+    <a class="social" id="facebook" href="https://m.facebook.com/people/For%C3%A7a-Natural-Trainer/100054513636941/?locale=sw_KE">
+      <i class="bi bi-facebook"></i>
+    </a>
+    
+    <a class="social" id="whatsapp" href="#"><i class="bi bi-whatsapp"></i></a>
+  </div>
+  
+  <div class="linha2"></div>
+
+  <div class="fim">
+    <div class="contato">
+      <P>Trabalhamos com pessoas que buscam não só a estética, mas saúde e qualidade de vida. </P>
+    </div>
+
+
+    <div class="contato">
+      <P>(88)996013739</P>
+      <p>academia-forcanatural@hotmail.com</p>
+    </div>
+
+    <div class="informacoes">
+      <P>Rodovia Padre Cicero< N° 286 - ANDAR 1-PARAÍSO-CARIRIAÇU-CE</P>
+    </div>
+    
+
+    <div class="logo">
+      <img src="logo.png" alt="">
+    </div>
+</div>
+
+</div>
+
+
+<!--MENU-->
+  <!--<div class="menu" id="menu">
+   
+        
+    <nav>
+     
+      <ul class="dropdown-menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="treino" id="treino" onclick="m_abrir">
+           <a>Treino</a>
+
+            <div class="dropdown">
+              <a href="teino_semanal.html">Semanal</a>
+              <a href="treino_4 dias.html">4 Dias</a>
+              <a href="treino_3 dias.html">3 Dias</a>
+            </div>
+
+        </li>
+        <li>
+          <a href="como_surgiu.html">Como surgiu?</a>
+        </li>
+        <li>
+          <a href="formulario.html">Feedback</a>
+        </li>
+      </ul>
+      
+      <button class="login">Fazer login</button>
+      
+
+    </nav>
+  </div>-->
+<!--MENU-->
+
+
+<!--BORDA-->
+<div class="borda">
+  <nav class="navbar">
+    <ul>
+      
+      <li class="nav-itens-home">
+        <a class="forca" href="index.html">Força natural</a>
+      </li>
+        
+
+      <li class="nav-itens">
+        <button onclick="animar()">
+          Treinos
+        </button>
+        
+        <ul class="dropdawn" id="dropdown">
+        
+            <li>
+               <a href="teino_semanal.html">Semanal</a>
+            </li>
+        
+            <li>
+               <a href="treino_4dias.html">4 Dias</a>
+            </li>
+        
+            <li>
+               <a href="treino_3dias.html">3 Dias</a>
+            </li>
+        
+         </ul>
+      </li>
+      
+
+      
+      <li class="nav-itens">
+        <a class="nav-lin" href="quem_somos.html">Quem somos?</a>
+      </li>
+
+      <li class="nav-itens">
+        <a class="nav-lin" href="formulario.html">Feedback</a>
+      </li>
+      
+      <button class="loginn"> <a href="login.html">Login</a></button>
+           
+      
+    </ul>
+  </nav>
+
+      
+    
+  </div>
+ 
+ 
+  
+    <button onclick="anima()" id="btn-menu">
+    
+              <span class="linha"></span>
+              <span class="linha"></span>
+              <span class="linha"></span>
+    
+    </button>
+  
+ 
+   <div class="menu" id="menu">
+    
+        
+    <nav>
+      
+      <ul class="dropdown-menu">
+        
+        <li>
+        <button class="btn-treino" id="btn-treino"onclick="anim()">
+          Treinos
+        </button>
+        
+        <ul class="dropdawn-mobile" id="dropdown-m">
+        
+            <li>
+               <a href="semanal">Semanal</a>
+            </li>
+        
+            <li>
+               <a href="semanal">4 Dias</a>
+            </li>
+        
+            <li>
+               <a href="semanal">3 Dias</a>
+            </li>
+        
+         </ul>
+         
+        </li>
+        
+        <li>
+           <a class="nav-link-mobile"href="#"> <i class="bi bi-chevron-compact-down"></i>Como surgiu?</a>
+        </li>
+        <li class="blog">
+           <a class="nav-link-mobile"href="#" id=""> <i class="bi bi-chevron-compact-down"></i>Feedback</a>
+           <div class="dropdown">
+
+           </div>
+        
+              <button class="login_mobile"> <a class="nav-link-mobil"href="login.html">Login</a></button>
+      </ul>
+      
+    </nav>
+    
+  </div>
+
+
+<!--BORDA
+
+  <button onclick="animar()" id="btn-menu">
+  
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+  
+  </button>
+-->
+  <script src="Menu.js"></script>
+  <script src="carrossel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
