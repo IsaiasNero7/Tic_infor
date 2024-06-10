@@ -194,31 +194,11 @@
     <ul>
       
       <li class="nav-itens-home">
-        <a class="forca" href="index.html">Força natural</a>
+        <a class="forca" href="index.php">Força natural</a>
       </li>
         
 
-      <li class="nav-itens">
-        <button onclick="animar()">
-          Treinos
-        </button>
-        
-        <ul class="dropdawn" id="dropdown">
-        
-            <li>
-               <a href="teino_semanal.html">Semanal</a>
-            </li>
-        
-            <li>
-               <a href="treino_4dias.html">4 Dias</a>
-            </li>
-        
-            <li>
-               <a href="treino_3dias.html">3 Dias</a>
-            </li>
-        
-         </ul>
-      </li>
+
       
 
       
@@ -230,7 +210,7 @@
         <a class="nav-lin" href="formulario.html">Feedback</a>
       </li>
       
-      <button class="loginn"> <a href="login.html">Login</a></button>
+      <button class="loginn"> <a href="login.php">Login</a></button>
            
       
     </ul>

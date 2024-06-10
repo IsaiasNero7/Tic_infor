@@ -64,9 +64,9 @@ if(isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['tipo_usuari
                 $_SESSION['usuario_id'] = $row['id'];
                 $_SESSION['tipo_usuario'] = $tipo_usuario;
                 if($tipo_usuario === 'admin') {
-                    header("Location: index.html??id=" . $row['id']);
+                    header("Location: admin.html??id=" . $row['id']);
                 } else {
-                    header("Location: index2.html?id=" . $row['id']);
+                    header("Location: aluno.html?id=" . $row['id']);
                 }
                 exit;
             } else {
