@@ -1,6 +1,7 @@
 <?php
 session_start(); // Inicia a sessão
 
+
 // Função para conectar ao banco de dados
 function conectarBanco() {
     // Dados para conexão com o banco de dados
