@@ -92,4 +92,12 @@ if(isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['tipo_usuari
     header("Location: login.php");
     exit;
 }
+
+function logout(){
+    session_start();
+    session_unset();
+    session_destroy();
+    header("location: login.php");
+}
+
 ?>
