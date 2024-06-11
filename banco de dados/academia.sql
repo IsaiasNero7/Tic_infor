@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Jun-2024 às 14:01
+-- Tempo de geração: 11-Jun-2024 às 16:07
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 7.4.30
 
@@ -40,8 +40,7 @@ CREATE TABLE `cadastro` (
 --
 
 INSERT INTO `cadastro` (`id`, `nome`, `email`, `senha`, `tipo`) VALUES
-(1, 'luan boaventura', 'luan.santana@gmail.com', '$2y$10$2jfWMxVlT7MmGUokQDEWYu9.E3BXlWRy0C1HdhC5GWxoV0SjhXkrC', 'admin'),
-(2, 'luan santana', 'gabiru@gmail.com', '$2y$10$nSc/PvbhOEoyMEk5yEmU0uplzwgWzPHDE6dLi1Izi1VIA8OD5Ae6a', 'admin');
+(3, 'Admin', 'admin@gmail.com', '$2y$10$cdRPKkxQgrpnjRoIM0Wixuj3C2nJURpPP8fG.Mf94Qdg7Jd33jj4a', 'admin');
 
 -- --------------------------------------------------------
 
@@ -62,8 +61,7 @@ CREATE TABLE `cadastroaluno` (
 --
 
 INSERT INTO `cadastroaluno` (`id`, `nome`, `email`, `senha`, `tipo`) VALUES
-(1, 'gabiru', 'gabiru_12@gmail.com', '$2y$10$7j6lKGBv.gS1fZp0uA91JuL4YrvYcWqJaqb.GSt/TfsDCW4TwJyvO', 'aluno'),
-(2, 'gabriel', 'a@gmail.com', '$2y$10$gBR.x7JgJqly7VXHLoVVk.joOW/Pp0rulUoTEmoXEQtono5UqVgYy', 'aluno');
+(3, 'Aluno', 'aluno@gmail.com', '$2y$10$wHfX.HgC2ckPRjbXUhVL5OU/WgriCDTTkdI.nhE0gkR5Z79N.kVv6', 'aluno');
 
 --
 -- Índices para tabelas despejadas
@@ -89,13 +87,13 @@ ALTER TABLE `cadastroaluno`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `cadastroaluno`
 --
 ALTER TABLE `cadastroaluno`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

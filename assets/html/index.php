@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="carrossel.css">
-    <link rel="stylesheet" href="tabela.css">
+  <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="css/tabela.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="responsividade.css">
-    <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="css/rodape.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>

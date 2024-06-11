@@ -86,9 +86,9 @@ unset($_SESSION['sucesso']);
         }
         
         .btn {
-            background-color: #fff; /* Cor inicial */
-            color: black; /* Cor do texto */
-            border: 1px solid #1976d2; /* Borda */
+            background-color: #fff;
+            color: black;
+            border: 1px solid #1976d2; 
             border-radius: 4px;
             position: relative;
             top: 150px;
@@ -100,12 +100,12 @@ unset($_SESSION['sucesso']);
             font-size: 14px;
             font-weight: 500;
             cursor: pointer;
-            transition: background-color 0.2s ease, color 0.2s ease; /* Transições */
+            transition: background-color 0.2s ease, color 0.2s ease; 
         }
 
         .btn:hover {
-            background-color: white; /* Cor ao passar o mouse */
-            color: black; /* Cor do texto ao passar o mouse */
+            background-color: white; 
+            color: black; 
         }
 
         .btn-back {
@@ -164,32 +164,32 @@ unset($_SESSION['sucesso']);
         <a href="cad.php" class="btn-back">Não é cadastrado? Vá até a FN e faça sua matrícula</a>
     </div>
 
-    <!-- Materialize JS -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Custom JS -->
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('select');
             var instances = M.FormSelect.init(elems, {});
 
-            // Adiciona um ouvinte de evento para alterar a cor do botão "Entrar"
+           
             var radios = document.querySelectorAll('input[name="tipo_usuario"]');
             radios.forEach(function (radio) {
                 radio.addEventListener('change', function () {
                     var btnEntrar = document.getElementById('btn-entrar');
                     if (this.value === 'admin') {
-                        btnEntrar.style.backgroundColor = '#DC143C'; // Vermelho para admin
+                        btnEntrar.style.backgroundColor = '#DC143C'; 
                         btnEntrar.style.borderColor = 'white';
-                        btnEntrar.style.color = 'white'; // Texto branco
+                        btnEntrar.style.color = 'white'; 
                     } else if (this.value === 'aluno') {
-                        btnEntrar.style.backgroundColor = '#ffde59'; // Amarelo para paciente
+                        btnEntrar.style.backgroundColor = '#ffde59'; 
                         btnEntrar.style.borderColor = 'white';
-                        btnEntrar.style.color = 'black'; // Texto branco
+                        btnEntrar.style.color = 'black'; 
                     } else {
-                        btnEntrar.style.backgroundColor = '#fff'; // Cor inicial
+                        btnEntrar.style.backgroundColor = '#fff'; 
                         btnEntrar.style.borderColor = 'black';
-                        btnEntrar.style.color = '#1976d2'; // Cor do texto
+                        btnEntrar.style.color = '#1976d2'; 
                     }
                 });
             });
