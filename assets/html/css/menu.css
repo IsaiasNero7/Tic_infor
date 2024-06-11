@@ -6,7 +6,23 @@ body{
   background-color: gray;
 }
 
+.sair{
 
+  background-color:transparent;
+  border: solid 1px #ffDE59;
+  color: aliceblue;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 5vw;
+
+}
+
+.sair a{
+  color:#ffDE59;
+  text-decoration: none;
+  font-size: 20px;
+}
 
 .loginn{
   background-color:transparent;
@@ -145,7 +161,7 @@ body{
 }
 
 
-.linha{
+.linhaa{
   width: 30px;
   height: 2px;
   background-color: #ffDE59;

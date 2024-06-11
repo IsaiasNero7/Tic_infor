@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['usuario_id'])){
+header("location:index.php");
+
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,7 +213,7 @@
       </li>
       
       <button class="loginn"> <a href="cad.html">Matricula</a></button>
-           
+      <button class="sair"> <a href="logout.php">Sair</a></button>
       
     </ul>
   </nav>
@@ -213,9 +226,9 @@
   
     <button onclick="anima()" id="btn-menu">
     
-              <span class="linha"></span>
-              <span class="linha"></span>
-              <span class="linha"></span>
+              <span class="linhaa"></span>
+              <span class="linhaa"></span>
+              <span class="linhaa"></span>
     
     </button>
   
@@ -259,7 +272,8 @@
 
            </div>
         
-              <button class="login_mobile"> <a class="nav-link-mobil"href="login.html">Login</a></button>
+              
+              <button class="login_mobile"> <a class="nav-link-mobil"href="logout.php">Sair</a></button>
       </ul>
       
     </nav>
@@ -279,6 +293,5 @@
 -->
   <script src="Menu.js"></script>
   <script src="js/carrossel.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

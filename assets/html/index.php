@@ -152,40 +152,7 @@
 </div>
 
 
-<!--MENU-->
-  <!--<div class="menu" id="menu">
-   
-        
-    <nav>
-     
-      <ul class="dropdown-menu">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="treino" id="treino" onclick="m_abrir">
-           <a>Treino</a>
 
-            <div class="dropdown">
-              <a href="teino_semanal.html">Semanal</a>
-              <a href="treino_4 dias.html">4 Dias</a>
-              <a href="treino_3 dias.html">3 Dias</a>
-            </div>
-
-        </li>
-        <li>
-          <a href="como_surgiu.html">Como surgiu?</a>
-        </li>
-        <li>
-          <a href="formulario.html">Feedback</a>
-        </li>
-      </ul>
-      
-      <button class="login">Fazer login</button>
-      
-
-    </nav>
-  </div>-->
-<!--MENU-->
 
 
 <!--BORDA-->
@@ -200,10 +167,8 @@
 
 
       
-
-      
       <li class="nav-itens">
-        <a class="nav-lin" href="quem_somos.html">Quem somos?</a>
+        <a class="nav-lin" href="quem-somos.html">Quem somos?</a>
       </li>
 
       <li class="nav-itens">
