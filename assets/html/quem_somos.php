@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['usuario_id'])){
+header("location:index.php");
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +24,7 @@
           <ul>
             
             <li class="nav-itens-home">
-              <a class="forca" href="index.html">Força natural</a>
+              <a class="forca" href="admin.php">Força natural</a>
             </li>
               
       
@@ -25,15 +36,15 @@
               <ul class="dropdawn" id="dropdown">
               
                   <li>
-                     <a href="teino_semanal.html">Semanal</a>
+                     <a href="teino_semanal.php">Semanal</a>
                   </li>
               
                   <li>
-                     <a href="treino_4dias.html">4 Dias</a>
+                     <a href="treino_4dias.php">4 Dias</a>
                   </li>
               
                   <li>
-                     <a href="treino_3dias.html">3 Dias</a>
+                     <a href="treino_3dias.php">3 Dias</a>
                   </li>
               
                </ul>
@@ -42,14 +53,15 @@
       
             
             <li class="nav-itens">
-              <a class="nav-lin" href="quem_somos.html">Quem somos?</a>
+              <a class="nav-lin" href="quem_somos.php">Quem somos?</a>
             </li>
       
             <li class="nav-itens">
               <a class="nav-lin" href="formulario.html">Feedback</a>
             </li>
             
-            <button class="loginn"> <a href="login.php">Login</a></button>
+            
+            <button class="sair"> <a href="logout.php">Sair</a></button>
                  
             
           </ul>
@@ -109,7 +121,8 @@
       
                  </div>
               
-                    <button class="login_mobile"> <a class="nav-link-mobil"href="login.html">Login</a></button>
+                 <button class="loginn"> <a href="cad.html">Matricula</a></button>
+                 <button class="sair"> <a href="logout.php">Sair</a></button>
             </ul>
             
           </nav>
@@ -119,5 +132,6 @@
     <img src="quem somos/1.png">
     <img src="quem somos/2.png">
    
+    <script src="js/Menu.js"></script>
 </body>
 </html>

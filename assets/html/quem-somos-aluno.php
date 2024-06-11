@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['usuario_id'])){
+header("location:index.php");
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,23 +24,44 @@
           <ul>
             
             <li class="nav-itens-home">
-              <a class="forca" href="index.html">Força natural</a>
+              <a class="forca" href="aluno.php">Força natural</a>
             </li>
               
       
-            
+            <li class="nav-itens">
+              <button onclick="animar()">
+                Treinos
+              </button>
+              
+              <ul class="dropdawn" id="dropdown">
+              
+                  <li>
+                     <a href="teino_semanal.php">Semanal</a>
+                  </li>
+              
+                  <li>
+                     <a href="treino_4dias.php">4 Dias</a>
+                  </li>
+              
+                  <li>
+                     <a href="treino_3dias.php">3 Dias</a>
+                  </li>
+              
+               </ul>
+            </li>
             
       
             
             <li class="nav-itens">
-              <a class="nav-lin" href="quem-somos.html">Quem somos?</a>
+              <a class="nav-lin" href="quem-somos-aluno.php">Quem somos?</a>
             </li>
       
             <li class="nav-itens">
               <a class="nav-lin" href="formulario.html">Feedback</a>
             </li>
             
-            <button class="loginn"> <a href="login.php">Login</a></button>
+            
+            <button class="sair"> <a href="logout.php">Sair</a></button>
                  
             
           </ul>
@@ -57,8 +89,28 @@
             
             <ul class="dropdown-menu">
               
-            
+              <li>
+              <button class="btn-treino" id="btn-treino"onclick="anim()">
+                Treinos
+              </button>
               
+              <ul class="dropdawn-mobile" id="dropdown-m">
+              
+                  <li>
+                     <a href="semanal">Semanal</a>
+                  </li>
+              
+                  <li>
+                     <a href="semanal">4 Dias</a>
+                  </li>
+              
+                  <li>
+                     <a href="semanal">3 Dias</a>
+                  </li>
+              
+               </ul>
+               
+              </li>
               
               <li>
                  <a class="nav-link-mobile"href="#"> <i class="bi bi-chevron-compact-down"></i>Como surgiu?</a>
@@ -69,7 +121,7 @@
       
                  </div>
               
-                    <button class="login_mobile"> <a class="nav-link-mobil"href="login.html">Login</a></button>
+                 
             </ul>
             
           </nav>
@@ -79,5 +131,6 @@
     <img src="quem somos/1.png">
     <img src="quem somos/2.png">
    
+    <script src="js/Menu.js"></script>
 </body>
 </html>

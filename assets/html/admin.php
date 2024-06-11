@@ -67,15 +67,7 @@ header("location:index.php");
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-  
+        
   
       </div>
     </section>
@@ -188,15 +180,15 @@ header("location:index.php");
         <ul class="dropdawn" id="dropdown">
         
             <li>
-               <a href="teino_semanal.html">Semanal</a>
+               <a href="teino_semanal.php">Semanal</a>
             </li>
         
             <li>
-               <a href="treino_4dias.html">4 Dias</a>
+               <a href="treino_4dias.php">4 Dias</a>
             </li>
         
             <li>
-               <a href="treino_3dias.html">3 Dias</a>
+               <a href="treino_3dias.php">3 Dias</a>
             </li>
         
          </ul>
@@ -205,7 +197,7 @@ header("location:index.php");
 
       
       <li class="nav-itens">
-        <a class="nav-lin" href="quem_somos.html">Quem somos?</a>
+        <a class="nav-lin" href="quem_somos.php">Quem somos?</a>
       </li>
 
       <li class="nav-itens">
@@ -291,7 +283,7 @@ header("location:index.php");
   
   </button>
 -->
-  <script src="Menu.js"></script>
+  <script src="js/Menu.js"></script>
   <script src="js/carrossel.js"></script>
 </body>
 </html>

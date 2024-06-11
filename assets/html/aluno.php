@@ -65,14 +65,7 @@ header("location:index.php");
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+       
   
   
       </div>
@@ -163,40 +156,7 @@ header("location:index.php");
 </div>
 
 
-<!--MENU-->
-  <!--<div class="menu" id="menu">
-   
-        
-    <nav>
-     
-      <ul class="dropdown-menu">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li class="treino" id="treino" onclick="m_abrir">
-           <a>Treino</a>
 
-            <div class="dropdown">
-              <a href="teino_semanal.html">Semanal</a>
-              <a href="treino_4 dias.html">4 Dias</a>
-              <a href="treino_3 dias.html">3 Dias</a>
-            </div>
-
-        </li>
-        <li>
-          <a href="como_surgiu.html">Como surgiu?</a>
-        </li>
-        <li>
-          <a href="formulario.html">Feedback</a>
-        </li>
-      </ul>
-      
-      <button class="login">Fazer login</button>
-      
-
-    </nav>
-  </div>-->
-<!--MENU-->
 
 
 <!--BORDA-->
@@ -217,15 +177,15 @@ header("location:index.php");
         <ul class="dropdawn" id="dropdown">
         
             <li>
-               <a href="teino_semanal.html">Semanal</a>
+               <a href="teino_semanal.php">Semanal</a>
             </li>
         
             <li>
-               <a href="treino_4dias.html">4 Dias</a>
+               <a href="treino_4dias.php">4 Dias</a>
             </li>
         
             <li>
-               <a href="treino_3dias.html">3 Dias</a>
+               <a href="treino_3dias.php">3 Dias</a>
             </li>
         
          </ul>
@@ -234,7 +194,7 @@ header("location:index.php");
 
       
       <li class="nav-itens">
-        <a class="nav-lin" href="quem_somos.html">Quem somos?</a>
+        <a class="nav-lin" href="quem-somos-aluno.php">Quem somos?</a>
       </li>
 
       <li class="nav-itens">
@@ -319,8 +279,8 @@ header("location:index.php");
   
   </button>
 -->
-  <script src="Menu.js"></script>
+  <script src="js/Menu.js"></script>
   <script src="js/carrossel.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
 </body>
 </html>

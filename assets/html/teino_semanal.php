@@ -1,13 +1,23 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['usuario_id'])){
+header("location:index.php");
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="treinos.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/treinos.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Treino semanal</title>
 </head>
 <body style="background-color: black;">
     <img class="banner" src="treinos_img/banner.png" >
@@ -32,15 +42,15 @@
             <ul class="dropdawn" id="dropdown">
             
                 <li>
-                   <a href="teino_semanal.html">Semanal</a>
+                   <a href="teino_semanal.php">Semanal</a>
                 </li>
             
                 <li>
-                   <a href="treino_4dias.html">4 Dias</a>
+                   <a href="treino_4dias.php">4 Dias</a>
                 </li>
             
                 <li>
-                   <a href="treino_3dias.html">3 Dias</a>
+                   <a href="treino_3dias.php">3 Dias</a>
                 </li>
             
              </ul>
@@ -49,14 +59,15 @@
     
           
           <li class="nav-itens">
-            <a class="nav-lin" href="quem_somos.html">Quem somos?</a>
+            <a class="nav-lin" href="quem_somos.php">Quem somos?</a>
           </li>
     
           <li class="nav-itens">
             <a class="nav-lin" href="formulario.html">Feedback</a>
           </li>
           
-          <button class="loginn"> <a href="login.html">Login</a></button>
+         
+          <button class="sair"> <a href="logout.php">Sair</a></button>
                
           
         </ul>
@@ -122,6 +133,6 @@
         </nav>
         
       </div>
-      <script src="Menu.js"></script>
+      <script src="js/Menu.js"></script>
 </body>
 </html>
